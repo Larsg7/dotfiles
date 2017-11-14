@@ -1,0 +1,31 @@
+!------------------------------------------------------------------------------
+! c o l o r -  s e t t i n g s
+
+*.foreground: #BCBCBC
+*.background: #262626
+*.color0:     #1C1C1C
+*.color8:     #444444
+*.color1:     #AF5F5F
+*.color9:     #FF8700
+*.color2:     #5F875F
+*.color10:    #87AF87
+*.color3:     #87875F
+*.color11:    #FFFFAF
+*.color4:     #5F87AF
+*.color12:    #8FAFD7
+*.color5:     #5F5F87
+*.color13:    #8787AF
+*.color6:     #5F8787
+*.color14:    #5FAFAF
+*.color7:     #6C6C6C
+*.color15:    #FFFFFF
+
+!------------------------------------------------------------------------------
+! u r x v t
+
+URxvt*geometry:         112x22  
+URxvt*font:            xft:Hack-Regular:size=9
+URxvt*urlLauncher:         chromium  
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:        true
+URxvt*scrollColor:        #000000
