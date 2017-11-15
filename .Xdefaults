@@ -24,8 +24,9 @@
 ! u r x v t
 
 URxvt*geometry:         112x22  
-URxvt*font:            xft:Hack-Regular:size=9
+URxvt*font:  xft:Hack-Regular:size=10:antialias=true,xft:DejaVu Sans:size=10:antialias=true,xft:Sauce Code Powerline:antialias=true:hinting=true:size=9
 URxvt*urlLauncher:         chromium  
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:        true
 URxvt*scrollColor:        #000000
+URxvt.letterSpace: 1 

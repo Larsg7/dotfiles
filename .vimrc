@@ -13,16 +13,19 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'leafgarland/typescript-vim'
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-repeat'
+Plugin 'klen/python-mode'
 Plugin 'tpope/vim-fugitive'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end()            
+filetype plugin indent on 
 
 colorscheme apprentice
+
 set number
 set relativenumber
 syntax on
@@ -37,3 +40,35 @@ set hlsearch
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" Syntastc
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Airline theme
+let g:airline_theme='lucius'
+let g:airline_powerline_fonts = 1
+
+" Python mode
+let g:pymode_python = 'python3'
+let g:pymode_rope = 1
+let g:pymode_rope_completion = 1
+let g:pymode_rope_complete_on_dot = 1
+let g:pymode_rope_completion_bind = '<C-Space>'
+let g:pymode_rope_rename_bind = '<C-c>rr'
+
+
+" Autostart
+
+" pep8
+let g:pymode_options_max_line_length = 99
+
+" Custom commands
+nmap oo o<Esc>k
+nmap OO O<Esc>j
